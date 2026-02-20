@@ -1,0 +1,215 @@
+/* =============================
+   General Page Styling
+============================= */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+/* =============================
+   HOME PAGE BACKGROUND
+============================= */
+
+.home-bg {
+    background: url("bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =============================
+   Main Card (Glass Effect)
+============================= */
+
+.home-card {
+    background: rgba(255, 255, 255, 0.85);   /* reduced opacity */
+    backdrop-filter: blur(8px);              /* glass effect */
+    width: 60%;
+    padding: 45px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =============================
+   Headings
+============================= */
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-size: 32px;
+}
+
+h3 {
+    color: #34495e;
+    margin-top: 5px;
+}
+
+
+/* =============================
+   Description
+============================= */
+
+.description {
+    margin: 25px 0;
+    font-size: 17px;
+    color: #444;
+    line-height: 1.6;
+}
+
+
+/* =============================
+   Feature List
+============================= */
+
+.features ul {
+    text-align: left;
+    width: 75%;
+    margin: 25px auto;
+}
+
+.features li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+/* =============================
+   Button
+============================= */
+
+.start-btn {
+    display: inline-block;
+    padding: 14px 35px;
+    margin-top: 20px;
+    background: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.start-btn:hover {
+    background: #1a252f;
+    transform: scale(1.05);
+}
+
+/* =============================
+   Prediction Form Styling
+============================= */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-card {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(6px);
+    padding: 40px;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    color: #000;
+}
+
+/* =============================
+   Result Page Styling
+============================= */
+
+.result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.result-card {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(6px);
+    padding: 40px;
+    width: 500px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.result {
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.safe {
+    background-color: #e6ffe6;
+    color: #006600;
+    border: 2px solid #009900;
+}
+
+.fraud {
+    background-color: #ffe6e6;
+    color: #cc0000;
+    border: 2px solid #cc0000;
+}
+
+.confidence-box {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.home-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #16a085;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.home-btn:hover {
+    background-color: #0e6655;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="home-bg">
+
+<div class="result-container">
+    <div class="result-card">
+
+        <h1>Prediction Result</h1>
+        <hr>
+
+        <div class="result 
+            {% if prediction == 1 %}fraud{% else %}safe{% endif %}">
+            
+            Prediction: {{ prediction }}
+
+        </div>
+
+        <div class="confidence-box">
+            <strong>Confidence Score:</strong> {{ confidence }}%
+        </div>
+
+        <div class="buttons">
+            <a href="/predict" class="start-btn">Try Another Transaction</a>
+            <a href="/" class="home-btn">Go to Home</a>
+        </div>
+
+        <p style="margin-top:15px; font-size:14px;">
+            0 = Not Fraud | 1 = Fraud
+        </p>
+
+    </div>
+</div>
+
+</body>
+</html>
